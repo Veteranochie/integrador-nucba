@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #8023c2;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #336b2e 12%, transparent 12.5%, transparent 87%, #336b2e 87.5%, #336b2e), linear-gradient(150deg, #336b2e 12%, transparent 12.5%, transparent 87%, #336b2e 87.5%, #336b2e), linear-gradient(30deg, #336b2e 12%, transparent 12.5%, transparent 87%, #336b2e 87.5%, #336b2e), linear-gradient(150deg, #336b2e 12%, transparent 12.5%, transparent 87%, #336b2e 87.5%, #336b2e), linear-gradient(60deg, #336b2e77 25%, transparent 25.5%, transparent 75%, #336b2e77 75%, #336b2e77), linear-gradient(60deg, #336b2e77 25%, transparent 25.5%, transparent 75%, #336b2e77 75%, #336b2e77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+header{
+    top: 0;
+    z-index: 1;
+}
+.contenedor{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d1d35;
+    padding-block: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo img{
+    margin-right: 50px;
+    width: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    color: azure;
+}
+#toggler,
+.navbar label{
+    display: none;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 450px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    animation: neon 5s infinite;
+  }
+  
+
+@keyframes neon {
+    0%, 39%, 41%, 59%, 61%, 100% {
+    text-shadow: 
+    white 0 0 12px,
+    #00ff00 0 0 24px,
+    #00ff00 0 0 36px;
+    }
+    40%, 60% {
+    text-shadow: none;
+    }
+}
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 125px;
+  }
+  
+  .cut-short {
+    width: 80px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #01c68b;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: #eee;
+  }
+
+  .Footer > a{
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+  }
+
+  .Footer:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media screen and 
+(max-width: 600px) {
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+}

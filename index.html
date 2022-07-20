@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Koulen&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar contenedor">
+                <a href="#" class="logo"><img src="images/favicon.png" alt="Logotype"></a>
+                <input type="checkbox" id="toggler">
+                <label for="toggler"><i class="ri-menu-line"></i></label>
+                <div class="menu">
+                    <ul class="list">
+                        <li><a href="#contactos">Contactos</a></li>
+                        <li><a href="#Marcas">Marcas</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="sesion/register.html">Registrarse</a></li>
+                        <li><a href="sesion/longin.html">Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="Hero">
+            <div class="informacion">
+                <h1>Gaming House</h1>
+                <p>
+                  Compras gamer al mejor precio!
+                </p>
+            </div>
+            <div class="recomended games">
+              <div class="games-containter">
+                <img src="images/imagenesdejuegos/resident.webp" alt="">
+              </div>
+              <div class="games-containter">
+                <img src="images/imagenesdejuegos/callofduty.jpg" alt="">
+                </div>              
+                <div class="games-containter">
+                  <img src="images/imagenesdejuegos/assasin.jpg" alt="">
+                </div>
+                <div class="games-containter">
+                  <img src="images/imagenesdejuegos/spiderman.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="gift-cards">
+          <h2>Tarjetas de regalos</h2>
+          <div class="gifts">
+            <div class="contain-gift">
+              <img src="images/giftcards/play.webp" alt="">
+            </div>
+            <div class="contain-gift">
+              <img src="images/giftcards/xbox.webp" alt="">
+            </div>
+            <div class="contain-gift">
+              <img src="images/giftcards/steam.webp" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="cards-games">
+          <h2>Juegos Recomendados</h2>
+          <div class="cards-container">
+
+            <div class="card-container">
+              <div class="img-card">
+                <img src="https://image.api.playstation.com/cdn/UP1018/CUSA00133_00/Qsyx0vsXd6yI1JcqE8wtN3vUiDFjq6xR.png" alt="Game 1">
+              </div>
+              <div class="card-description">
+                <div class="title-game">
+                  <span>Batman Arkham Knight</span>
+                </div>
+                <div class="Area-Card">MULTI</div>
+                <p>Desde</p>
+                <div class="price">2500 ARS</div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="img-card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/1710/UUnpHLJqLAIJX5HioswiPuAm.png" alt=""> 
+              </div>
+              <div class="card-description">
+                <div class="title-game">
+                  <span>Devil May Cry 5</span>
+                </div>
+                <div class="Area-Card">PS5</div>
+                <p>Desde</p>
+                <div class="price">5000.00 ARS</div>  
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="img-card">
+                <img src="https://image.api.playstation.com/vulcan/coal-image-prod/cdn/molt/ALL/201905/MOLT2276_ZZ/rUhQGewc1LDM3PMCNg.png" alt="">  
+              </div>
+              <div class="card-description">
+                <div class="title-game">
+                  <span>Outlast Trinity</span>
+                </div>
+                <div class="Area-Card">Multi</div>
+                <p>Desde</p>
+                <div class="price">1000.00 ARS</div> 
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="img-card">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/DGW5xHgDXbWaEvssZRG0QeCl.png" alt="">  
+              </div>
+              <div class="card-description">
+                <div class="title-game">
+                  <span>Resident Evil Village</span>
+                </div>
+                <div class="Area-Card">Global</div>
+                <p>Desde</p>
+                <div class="price">1000.00 ARS</div>  
+              </div>
+            </div>
+          </div>
+          <div class="button-more">
+            <button class="button button4">Mostrar todo</button>
+          </div>
+        </section>
+
+        <section class="products" id="productos">
+          <h2>Accesorios Gamers</h2>
+          <div class="product">
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/pc.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Pc gamer</span>
+                <div class="price"> <b>Desde</b> 150,000.00 ARS</div>
+                <button class="buy-button">Ver Todas</button>
+              </div>              
+            </div>
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/sillagamer.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Sillas Gamers</span>
+                <div class="price"> <b>Desde</b> 40,000.00 ARS</div>
+                <button class="buy-button">Ver Todas</button>
+              </div>  
+
+            </div>
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/graphic-card.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Graficas</span>
+                <div class="price"> <b>Desde</b> 30,000.00 ARS</div>
+                <button class="buy-button">Ver mas</button>
+              </div>  
+
+            </div>
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/accesorios.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Accesorios Gamers</span>
+                <div class="price"> <b>Desde</b> 5,000.00 ARS</div>
+                <button class="buy-button">Ver mas</button>
+              </div>  
+
+            </div>
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/notebook.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Portatiles</span>
+                <div class="price"> <b>Desde</b> 50,000.00 ARS</div>
+                <button class="buy-button">Ver mas</button>
+              </div>  
+
+            </div>
+            <div class="card-product">
+              <div class="img-product">
+                <img src="images/productos/console.png" alt="">
+
+              </div>
+              <div class="product-description">
+                <span>Consolas</span>
+                <div class="price"> <b>Desde</b> 75,000.00 ARS</div>
+                <button class="buy-button">Ver mas</button>
+              </div>  
+
+            </div>
+
+
+
+          </div>
+          
+        </section>
+
+        <section class="Marcas" id="Marcas">
+            <h2>Principales Marcas</h2>
+            <div class="Marcas-info">
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="./images/marcas/1.png">
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h3>Nvidia</h3>
+                      <p>Nvidia Corporation es una empresa multinacional especializada en el desarrollo de unidades de procesamiento gráfico y tecnologías de circuitos integrados
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="./images/marcas/2.png">
+            
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h3>Aorus</h3>
+                      <p>Es una empresa líder en placas base de alto rendimiento, tarjetas gráficas, portátiles, hardware para juegos y sistemas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="./images/marcas/3.png">
+            
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h3>Intel</h3>
+                      <p>Es el mayor fabricante de circuitos integrados del mundo según su cifra de negocio anual
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="./images/marcas/4.png">
+            
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h3>Alienware</h3>
+                      <p>Es una compañía de hardware estadounidense que ensambla computadoras de escritorio, portátiles, estaciones de trabajo y consolas de juegos de PC.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+      </div>
+
+    <footer>
+      <div class="info">
+        <div class="Footer"><a href="#">Terminos y condiciones</a></div>
+
+        <div class="Footer"><a href="#">Preferencia de Cookies</a></div>
+        <div class="Footer"><a href="#">Aviso de Privacidad</a></div>
+        <div><p>© 2022 GamingHouse. Todos los derechos reservados.</p></div>
+      </div>
+        
+      <div class="contacto">
+        <ul class="contactos" id="contactos">
+          <li><img src="images/instagram.png" alt=""></li>
+          <li><img src="images/twitter.png" alt=""></li>
+          <li><img src="images/wsp.png" alt=""></li>
+        </ul>
+      </div>
+  </footer>
+</body>
+</html>
